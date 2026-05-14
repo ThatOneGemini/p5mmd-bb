@@ -1,0 +1,243 @@
+:root {
+  --color-primary: #e30613;
+  --color-text: #1d1d1b;
+  --color-background: #f3f3f3;
+  --color-card: #e8f1f8;
+  --color-light: #dadada;
+  --color-white: #ffffff;
+  --color-overlay: rgba(0,0,0,0.4);
+
+  --font-primary: 'Open Sans', sans-serif;
+
+  --radius-small: 6px;
+  --radius-medium: 12px;
+  --radius-large: 24px;
+
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+
+  --shadow-soft: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.app {
+  max-width: 430px;
+  min-height: 100vh;
+  background: var(--color-white);
+  margin: auto;
+  position: relative;
+  padding-bottom: 90px;
+}
+
+.header {
+  text-align: center;
+  padding: var(--space-md);
+}
+
+.header__logo {
+  width: 120px;
+  margin-bottom: var(--space-sm);
+}
+
+.header__title {
+  font-size: 1.5rem;
+}
+
+.documents {
+  padding: var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.document-card {
+  display: flex;
+  background: var(--color-card);
+  border-radius: var(--radius-medium);
+  overflow: hidden;
+  min-height: 90px;
+}
+
+.document-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  font-size: 2rem;
+}
+
+.document-card__content {
+  flex: 1;
+  padding: var(--space-sm);
+}
+
+.document-card__title {
+  font-size: 0.95rem;
+  margin-bottom: var(--space-xs);
+}
+
+.document-card__tag {
+  display: inline-block;
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 0.25rem 0.5rem;
+  font-size: 0.7rem;
+  border-radius: var(--radius-small);
+  margin-bottom: 0.5rem;
+}
+
+.document-card__date {
+  font-size: 0.75rem;
+  color: #666;
+}
+
+.document-card__button {
+  width: 70px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: 2rem;
+}
+
+.floating-button {
+  position: fixed;
+  right: 20px;
+  bottom: 90px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: 2rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.navigation {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 430px;
+  background: var(--color-white);
+  display: flex;
+  justify-content: space-around;
+  padding: var(--space-sm);
+  border-top: 1px solid #ddd;
+}
+
+.navigation__item {
+  font-size: 1.8rem;
+}
+
+.navigation__item--active {
+  color: var(--color-primary);
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: var(--color-overlay);
+  display: flex;
+  align-items: flex-end;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal__content {
+  background: var(--color-white);
+  width: 100%;
+  max-width: 430px;
+  margin: auto;
+  border-radius: 24px 24px 0 0;
+  padding: var(--space-lg) var(--space-sm);
+  position: relative;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.modal__close {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 1.4rem;
+}
+
+.modal__logo {
+  width: 90px;
+  display: block;
+  margin: auto;
+}
+
+.modal__title {
+  text-align: center;
+  margin: var(--space-md) 0;
+}
+
+.upload-button {
+  width: 100%;
+  background: var(--color-light);
+  padding: 1rem;
+  border-radius: var(--radius-medium);
+  margin-bottom: var(--space-lg);
+}
+
+.categories__title {
+  margin-bottom: var(--space-sm);
+}
+
+.categories__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.category {
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  border-radius: var(--radius-small);
+  padding: 0.5rem 0.75rem;
+}
+
+.category--active {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.create-button {
+  width: 100%;
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 1rem;
+  border-radius: var(--radius-medium);
+  font-weight: 700;
+  margin-top: 3rem;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benedikte Brechmann</title>
+
+  
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <header class="header">
+    <img src="assets/logo/image 7.png" alt="Benedikte Brechmann" class="header__logo">
+    <h1 class="header__title">Dokumenter</h1>
+  </header>
+
+  <main class="documents">
+
+    <article class="document-card">
+      <div class="document-card__icon">📄</div>
+
+      <div class="document-card__content">
+        <h2 class="document-card__title">Kerteminde ejendomsret</h2>
+
+        <span class="document-card__tag">
+          Lovgivning
+        </span>
+
+        <p class="document-card__date">
+          Tilføjet d. 15/8/2024
+        </p>
+      </div>
+
+      <button class="document-card__button">
+        ›
+      </button>
+    </article>
+
+    <article class="document-card">
+      <div class="document-card__icon">📄</div>
+
+      <div class="document-card__content">
+        <h2 class="document-card__title">Munkebogade 47</h2>
+
+        <span class="document-card__tag">
+          Bolig
+        </span>
+
+        <p class="document-card__date">
+          Tilføjet d. 8/8/2024
+        </p>
+      </div>
+
+      <button class="document-card__button">
+        ›
+      </button>
+    </article>
+
+  </main>
+
+  <button class="floating-button" id="open-modal">
+    +
+  </button>
+
+  <nav class="navigation">
+    <button class="navigation__item"><img src="assets/ikoner/message bubble.png" alt=""></button>
+    <button class="navigation__item"><img src= "assets/ikoner/Vector.png"  ></button>
+    <button class="navigation__item navigation__item--active"><img src="assets/ikoner/Group 139.png"></button>
+  </nav>
+
+</div>
+
+<div class="modal hidden" id="modal">
+  <div class="modal__content">
+
+    <button class="modal__close" id="close-modal">
+      ✕
+    </button>
+
+    <img src="assets/logo.png" alt="Logo" class="modal__logo">
+
+    <h2 class="modal__title">
+      Opret dokument
+    </h2>
+
+    <button class="upload-button">
+      Upload dokument fra mobil
+    </button>
+
+    <section class="categories">
+      <h3 class="categories__title">
+        Vælg kategori
+      </h3>
+
+      <div class="categories__wrapper">
+
+        <button class="category category--active">
+          Lovgivning
+        </button>
+
+        <button class="category">
+          Bolig
+        </button>
+
+        <button class="category">
+          Rådgivning
+        </button>
+
+        <button class="category">
+          Kontrakt
+        </button>
+
+        <button class="category">
+          Økonomi
+        </button>
+
+      </div>
+    </section>
+
+    <button class="create-button">
+      Opret
+    </button>
+
+  </div>
+</div>
+
+<script src="javascript/dokumenter.js"></script>
+</body>
+</html>
