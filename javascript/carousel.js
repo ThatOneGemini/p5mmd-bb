@@ -60,4 +60,4 @@ const karruselSection = document.getElementById("karrusel");
 
 const activeSlide = slides[currentIndex];
 
-karruselSection.textContent = activeSlide.title;
+karruselSection.textContent = activeSlide.title + " " + activeSlide.paragraph;
