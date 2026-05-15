@@ -57,4 +57,6 @@ const slides = [
 let currentIndex = 0;
 
 const karruselSection = document.getElementById("karrusel");
-karruselSection.textContent = "Karrusel virker";
+
+const activeSlide = slides[currentIndex];
+console.log (blablabla hahahah);
