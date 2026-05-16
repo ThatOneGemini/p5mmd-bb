@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Benedikte Brechmann</title>
+<!-- Adding Link and Script here-->
+        <link rel="stylesheet" href="kalender.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+        <script></script>
+    </head>
+
+    <body>
+        <div class="calendar-container">
+            <div class="header">
+                <button id="prev"> &laquo; Prev </button>
+                <h2 id="month-year"></h2>
+                <button id="next"> &raquo; Next </button>
+            </div>
+
+            <div class="days-of-weeks">
+                <div>Man</div>
+                <div>Tir</div>
+                <div>Ond</div>
+                <div>Tor</div>
+                <div>Fri</div>
+                <div>Lør</div>
+                <div>Søn</div>                
+            </div>
+
+            <div id="days-container" class="days-container"></div>
+        </div>
+
+        <div id="event-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Tilføj event</h2>
+                <input type="text" id="event-name" placeholder="Event name">
+                <input type="date" id="event-date">
+                <button id="save-event">Gem begivenhed</button>
+            </div>
+        </div>
+    </body>
+</html>
