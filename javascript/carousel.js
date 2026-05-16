@@ -1,7 +1,7 @@
 
 const slides = [
     {
-        image: "benedikte.webp",
+        image: "assets/carousel/benedikte.webp",
         alt: "Billede af Benedikte",
         title: "Mødes med",
         paragraph: "Benedikte Brechmann",
@@ -72,5 +72,5 @@ slides.forEach(function(slide) {
 
     slideElement.appendChild(imgElement); 
     karruselSection.appendChild(slideElement);
-    
+
 });
