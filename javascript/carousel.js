@@ -12,7 +12,7 @@ const slides = [
     },
 
     {
-        image: "bibi.webp",
+        image: "assets/carousel/bibi.webp",
         alt: "Billede af Bibi",
         title: "Samtale med",
         paragraph: "Bibi Foged Rasmussen",
@@ -23,7 +23,7 @@ const slides = [
     },
 
     {
-        image: "gronningen.webp",
+        image: "assets/carousel/gronningen.webp",
         alt: "Villa til åbent hus på Grønningen i Munkebo",
         title: "Åbent hus",
         adresse: "Grønningen 24",
@@ -33,7 +33,7 @@ const slides = [
     },
 
     {
-        image: "mollevej.webp",
+        image: "assets/carousel/mollevej.webp",
         alt: "Villa til åbent hus på Møllevej i Marslev",
         title: "Åbent hus",
         adresse: "Møllevej 10",
@@ -43,7 +43,7 @@ const slides = [
     },
     
     {
-        image: "frederik.webp",
+        image: "assets/carousel/frederik.webp",
         alt: "Billede af Frederik",
         title: "Samtale med",
         paragraph: "Frederik Brechmann",
