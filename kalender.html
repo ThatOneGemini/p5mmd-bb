@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Benedikte Brechmann</title>
 <!-- Adding Link and Script here-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="kalender.css">
         <script></script>
     </head>
 
@@ -32,7 +32,11 @@
 
         <div id="event-modal" class="modal">
             <div class="modal-content">
-                <span class="close"></span>
+                <span class="close">&times;</span>
+                <h2>Tilføj event</h2>
+                <input type="text" id="event-name" placeholder="Event name">
+                <input type="date" id="event-date">
+                <button id="save-event">Gem begivenhed</button>
             </div>
         </div>
     </body>
