@@ -49,6 +49,36 @@ body {
 
 }
 
+.karrusel__slide{
+ display: none;
+}
+
+.karrusel__slide--active{
+ display: block;
+}
+
+.karrusel__image{
+
+}
+
+.karrusel__overlay{
+
+}
+
+.karrusel__content{
+
+}
+
+.karrusel__title{
+
+}
+
+.karrusel__text{
+
+}
+
+
+
 button {
   border: none;
   background: none;
