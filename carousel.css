@@ -50,7 +50,10 @@ body {
 }
 
 .karrusel__slide{
- display: none;
+  position: relative;
+  display: none;
+  width: 100%;
+  overflow: hidden;
 }
 
 .karrusel__slide--active{
