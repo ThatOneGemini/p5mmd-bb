@@ -58,19 +58,64 @@ let currentIndex = 0;
 
 const karruselSection = document.getElementById("karrusel");
 
-slides.forEach(function(slide) {
+slides.forEach(function(slide, index) {
     
     const slideElement = document.createElement('article');
     slideElement.classList.add('karrusel__slide');
+    if (index === currentIndex) {
+    slideElement.classList.add('karrusel__slide--active');
+    }
 
     const imgElement = document.createElement('img');
     imgElement.classList.add('karrusel__image');
     imgElement.src = slide.image; 
     //* imgElement. og svo eh orð eftir á er notað þegar verið er að bæta nýju properties
     imgElement.alt = slide.alt; 
-    //* það sem kemur eftir = þýðir að hver mynd fær sitt eigið 
+    //* það sem kemur eftir = þýðir að hver mynd fær sitt eigið
+
+    const slideOverlay = document.createElement('div');
+    //* í svoganum bakvið createElement þá er það HTML tag sem ég er að búa til
+    slideOverlay.classList.add('karrusel__overlay');
+
+    const slideContent = document.createElement('div');
+    slideContent.classList.add('karrusel__content');
+    
+    const title = document.createElement('h2');
+    title.classList.add('karrusel__title');
+    title.textContent = slide.title;
+
+    const adresse = document.createElement('p');
+    adresse.classList.add('karrusel__text')
+    adresse.textContent = slide.adresse;
+
+    const city = document.createElement('p');
+    city.classList.add('karrusel__text')
+    city.textContent = slide.city;
+
+    const date = document.createElement('p');
+    date.classList.add('karrusel__text')
+    date.textContent = slide.date;
+
+    const time = document.createElement('p');
+    time.classList.add('karrusel__text')
+    time.textContent = slide.time;
 
     slideElement.appendChild(imgElement); 
+    slideElement.appendChild(slideOverlay);
+    slideOverlay.appendChild(slideContent);
+    slideContent.appendChild(title);
+    if (slide.paragraph) {
+        const paragraph = document.createElement('p');
+        paragraph.classList.add('karrusel__text');
+        paragraph.textContent = slide.paragraph;
+        slideContent.appendChild(paragraph);
+        slideContent.appendChild(adresse);
+        slideContent.appendChild(city);
+        slideContent.appendChild(date);
+        slideContent.appendChild(time);
+
+    }
     karruselSection.appendChild(slideElement);
+    //* Ég byggi elementið fyrst með öllum child-elements, og append-a það svo inn í containerinn í lokin.
 
 });
