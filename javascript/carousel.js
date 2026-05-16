@@ -58,6 +58,19 @@ let currentIndex = 0;
 
 const karruselSection = document.getElementById("karrusel");
 
-const activeSlide = slides[currentIndex];
+slides.forEach(function(slide) {
+    
+    const slideElement = document.createElement('article');
+    slideElement.classList.add('karrusel__slide');
 
-karruselSection.textContent = activeSlide.title + " " + activeSlide.paragraph;
+    const imgElement = document.createElement('img');
+    imgElement.classList.add('karrusel__image');
+    imgElement.src = slide.image; 
+    //* imgElement. og svo eh orð eftir á er notað þegar verið er að bæta nýju properties
+    imgElement.alt = slide.alt; 
+    //* það sem kemur eftir = þýðir að hver mynd fær sitt eigið 
+
+    slideElement.appendChild(imgElement); 
+    karruselSection.appendChild(slideElement);
+    
+});
