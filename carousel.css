@@ -67,8 +67,8 @@ body {
   width: 6rem;
   background-color: var(--color-primary);
   color: var(--color-white);
-  font-size: 8rem;
-  font-weight: 400;
+  font-size: 6rem;
+  font-weight: 300;
 }
 
 .forside-menu__title{
