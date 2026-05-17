@@ -46,7 +46,10 @@ body {
 }
 
 .karrusel{
-
+  width: 100%;
+  padding-inline: 1rem;
+  box-sizing: border-box; 
+  /* passar að padding teljist með í heildarbreiddinni, svo carouselinn ýtist ekki út fyrir skjáinn.*/
 }
 
 .karrusel__slide{
@@ -61,7 +64,9 @@ body {
 }
 
 .karrusel__image{
-
+  width: 100%;
+  display: block;
+/* fjarlægir lítið autt bil sem getur komið undir <img> */
 }
 
 .karrusel__overlay{
