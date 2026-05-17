@@ -50,8 +50,16 @@ body {
   width: 100%;
   border: 0.2rem solid var(--color-primary);
   padding-block: var(--space-sm);
-  padding-inline: var(--space-sm);
+  padding-left: var(--space-sm);
   /*Padding block up and down, inline to the sides*/
+}
+
+.forside-menu__card::after {
+  content: "";
+  margin-left: auto;
+  width: 4rem;
+  align-self: stretch;
+  background-color: var(--color-primary);
 }
 
 .forside-menu__title{
