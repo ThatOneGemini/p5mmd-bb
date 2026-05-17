@@ -50,6 +50,7 @@ body {
   padding-inline: 1rem;
   box-sizing: border-box; 
   /* passar að padding teljist með í heildarbreiddinni, svo carouselinn ýtist ekki út fyrir skjáinn.*/
+  padding-block: var(--space-md);
 }
 
 .karrusel__slide{
