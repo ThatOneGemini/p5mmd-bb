@@ -47,6 +47,10 @@ body {
   display: flex;
   align-items: center;
   gap: var(--space-sm);
+  width: 100%;
+  border: 0.2rem solid var(--color-primary);
+  padding-block: var(--space-sm); 
+/*gefur bil fyrir ofan og neðan innihaldið í hverju menu-item*/
 }
 
 .forside-menu__title{
