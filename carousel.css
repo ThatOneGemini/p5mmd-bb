@@ -56,7 +56,7 @@ body {
   position: relative;
   display: none;
   width: 100%;
-  aspect-ratio: 1400 / 1080; 
+  aspect-ratio: 16 / 9; 
   /*gefur slide-inu landscape form*/
   overflow: hidden;
 }
