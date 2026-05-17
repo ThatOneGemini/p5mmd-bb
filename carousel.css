@@ -85,7 +85,7 @@ body {
 
 .karrusel__content{
   color: var(--color-white);
-  padding: var(--space-sm);
+  padding: var(--space-md);
   text-align: left;
 }
 
