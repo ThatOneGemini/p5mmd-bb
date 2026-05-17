@@ -8,7 +8,7 @@ const slides = [
         adresse: "Bregnør Bygade 72",
         city: "5300 Kerteminde",
         date: "26. maj",
-        time: "08.15 - 09.45",
+        time: "kl 08.15 - 09.45",
     },
 
     {
@@ -19,7 +19,7 @@ const slides = [
         adresse: "Bregnør Bygade 72",
         city: "5300 Kerteminde",
         date: "26. maj",
-        time: "11.30 - 12.00",
+        time: "kl 11.30 - 12.00",
     },
 
     {
@@ -29,7 +29,7 @@ const slides = [
         adresse: "Grønningen 24",
         city: "5330 Munkebo",
         date: "28. maj",
-        time: "09.00 til 10.00",
+        time: "kl 09.00 til 10.00",
     },
 
     {
@@ -39,7 +39,7 @@ const slides = [
         adresse: "Møllevej 10",
         city: "5290 Marslev",
         date: "30. maj",
-        time: "09.00 til 10.00",
+        time: "kl 09.00 til 10.00",
     },
     
     {
@@ -50,7 +50,7 @@ const slides = [
         adresse: "Bregnør Bygade 72",
         city: "5300 Kerteminde",
         date: "31. maj",
-        time: "10.30 - 11.00",
+        time: "kl 10.30 - 11.00",
     },
 ];
 
