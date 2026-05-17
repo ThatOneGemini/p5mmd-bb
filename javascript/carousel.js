@@ -93,11 +93,11 @@ slides.forEach(function(slide, index) {
     city.textContent = slide.city;
 
     const date = document.createElement('p');
-    date.classList.add('karrusel__text')
+    date.classList.add('karrusel__text--date')
     date.textContent = slide.date;
 
     const time = document.createElement('p');
-    time.classList.add('karrusel__text')
+    time.classList.add('karrusel__text--time')
     time.textContent = slide.time;
 
     slideElement.appendChild(imgElement); 

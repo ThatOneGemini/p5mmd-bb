@@ -75,18 +75,19 @@ body {
   object-fit: cover;
 }
 
-.karrusel__overlay{
+.karrusel__overlay {
   position: absolute;
   inset: 0;
   background-color: var(--color-overlay);
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .karrusel__content{
   color: var(--color-white);
   font-family: var(--font-primary);
   padding: var(--space-sm);
+  text-align: left;
 }
 
 .karrusel__title{
@@ -95,6 +96,14 @@ body {
 
 .karrusel__text{
 
+}
+
+.karrusel__text--time{
+
+}
+
+.karrusel__text--date{
+  
 }
 
 
