@@ -44,6 +44,7 @@ body {
 }
 
 .forside-menu__card {
+  text-decoration: none;
   display: flex;
   align-items: center;
   gap: var(--space-sm);
