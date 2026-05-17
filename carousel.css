@@ -92,7 +92,7 @@ body {
 .karrusel__title {
   font-size: 2rem;
   line-height: 1.2;
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-xs);
 }
 
 .karrusel__text{
