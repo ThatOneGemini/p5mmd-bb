@@ -85,13 +85,15 @@ body {
 
 .karrusel__content{
   color: var(--color-white);
-  font-family: var(--font-primary);
   padding: var(--space-sm);
   text-align: left;
 }
 
-.karrusel__title{
-
+.karrusel__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: var(--space-xs);
 }
 
 .karrusel__text{
@@ -103,7 +105,7 @@ body {
 }
 
 .karrusel__text--date{
-  
+
 }
 
 
