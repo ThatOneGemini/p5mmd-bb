@@ -81,8 +81,7 @@ body {
   color: var(--color-overlay);
 }
 
-.karrusel__content{
-  color: var(--color-white);
+.karrusel__content{  
   font-family: var(--font-primary);
   padding: var(--space-sm);
 }
