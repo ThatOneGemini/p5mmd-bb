@@ -47,7 +47,8 @@ body {
 
 .karrusel{
   width: 100%;
-  padding-inline: 2rem;
+  max-width: 24rem;
+  padding-inline: 6rem;
   box-sizing: border-box; 
   /* passar að padding teljist með í heildarbreiddinni, svo carouselinn ýtist ekki út fyrir skjáinn.*/
 }
