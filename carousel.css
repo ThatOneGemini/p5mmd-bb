@@ -79,6 +79,8 @@ body {
   position: absolute;
   inset: 0;
   background-color: var(--color-overlay);
+  display: flex;
+  align-items: flex-end;
 }
 
 .karrusel__content{
