@@ -96,15 +96,20 @@ body {
 }
 
 .karrusel__text{
-
-}
-
-.karrusel__text--time{
-
+  line-height: 1;
+  margin-bottom: var(--space-xs);
 }
 
 .karrusel__text--date{
+  font-size: 1.5;
+  line-height: 1;
+  margin-bottom: var(--space-xs);
+}
 
+.karrusel__text--time{
+  font-size: 1.5;
+  line-height: 1;
+  margin-bottom: var(--space-xs);
 }
 
 
