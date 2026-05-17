@@ -104,7 +104,7 @@ body {
 .karrusel__text--date{
   font-size: 1.5rem;
   line-height: 1;
-  margin-bottom: var(--space-xs);
+  margin-top: var(--space-sm);
 }
 
 .karrusel__text--time{
