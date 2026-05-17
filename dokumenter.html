@@ -14,62 +14,101 @@
 <div class="app">
 
   <header class="header">
-    <img src="assets/logo/logoBB.png" alt="Benedikte Brechmann" class="header__logo">
+    <img src="assets/logo/logoBB.png" alt="Benedikte Brechmann logo" class="header__logo">
     <h1 class="header__title">Dokumenter</h1>
   </header>
 
   <main class="documents">
 
-    <article class="document-card">
-      <div class="document-card__icon">📄</div>
+  <article class="document-card">
+    <div class="document-card__icon">📄</div>
 
-      <div class="document-card__content">
-        <h2 class="document-card__title">Kerteminde ejendomsret</h2>
+    <div class="document-card__content">
+      <h2 class="document-card__title">
+        Kerteminde ejendomsret
+      </h2>
 
-        <span class="document-card__tag">
-          Lovgivning
-        </span>
+      <span class="document-card__tag">
+        Lovgivning
+      </span>
 
-        <p class="document-card__date">
-          Tilføjet d. 15/8/2024
-        </p>
-      </div>
+      <p class="document-card__date">
+        Tilføjet d. 15/8/2024
+      </p>
+    </div>
 
-      <button class="document-card__button">
-        ›
-      </button>
-    </article>
+    <button
+      class="document-card__button"
+      aria-label="Åbn dokument Kerteminde ejendomsret"
+    >
+      ›
+    </button>
+  </article>
 
-    <article class="document-card">
-      <div class="document-card__icon">📄</div>
+  <article class="document-card">
+    <div class="document-card__icon">📄</div>
 
-      <div class="document-card__content">
-        <h2 class="document-card__title">Munkebogade 47</h2>
+    <div class="document-card__content">
+      <h2 class="document-card__title">
+        Munkebogade 47
+      </h2>
 
-        <span class="document-card__tag">
-          Bolig
-        </span>
+      <span class="document-card__tag">
+        Bolig
+      </span>
 
-        <p class="document-card__date">
-          Tilføjet d. 8/8/2024
-        </p>
-      </div>
+      <p class="document-card__date">
+        Tilføjet d. 8/8/2024
+      </p>
+    </div>
 
-      <button class="document-card__button">
-        ›
-      </button>
-    </article>
+    <button
+      class="document-card__button"
+      aria-label="Åbn dokument Munkebogade 47"
+    >
+      ›
+    </button>
+  </article>
 
-  </main>
-
-  <button class="floating-button" id="open-modal">
-    +
-  </button>
+</main>
+<button 
+  class="floating-button" 
+  id="open-modal"
+  aria-label="Opret nyt dokument"
+>
+  +
+</button>
 
   <nav class="navigation">
-    <button class="navigation__item"><img src="assets/ikoner/beskeder.png" alt=""></button>
-    <button class="navigation__item"><img src= "assets/ikoner/kalender.png"  ></button>
-    <button class="navigation__item navigation__item--active"><img src="assets/ikoner/dokumenter.png"></button>
+  <button 
+  class="navigation__item"
+  aria-label="Beskeder"
+>
+  <img 
+    src="assets/ikoner/beskeder.png" 
+    alt=""
+    aria-hidden="true"
+  >
+<button 
+  class="navigation__item"
+  aria-label="Kalender"
+>
+  <img 
+    src="assets/ikoner/kalender.png"
+    alt=""
+    aria-hidden="true"
+  >
+<button 
+  class="navigation__item navigation__item--active"
+  aria-label="Dokumenter"
+  aria-current="page"
+>
+  <img 
+    src="assets/ikoner/dokumenter.png"
+    alt=""
+    aria-hidden="true"
+  >
+</button>
   </nav>
 
 </div>
@@ -77,11 +116,15 @@
 <div class="modal hidden" id="modal">
   <div class="modal__content">
 
-    <button class="modal__close" id="close-modal">
-      ✕
-    </button>
+<button 
+  class="modal__close" 
+  id="close-modal"
+  aria-label="Luk popup"
+>
+  ✕
+</button>
 
-    <img src="assets/logo/logoBB.png" alt="Logo" class="modal__logo">
+    <img src="assets/logo/logoBB.png" alt="Bendedikte Brechmann Logo" class="modal__logo">
 
     <h2 class="modal__title">
       Opret dokument
