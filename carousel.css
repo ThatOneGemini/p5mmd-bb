@@ -59,6 +59,8 @@ body {
   aspect-ratio: 1400 / 1080; 
   /*gefur slide-inu landscape form*/
   overflow: hidden;
+  max-width: 24rem;
+  margin-inline: auto;
 }
 
 .karrusel__slide--active{
