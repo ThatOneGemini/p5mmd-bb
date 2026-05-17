@@ -6,17 +6,17 @@
 
 body {
     font-family: Open-sans, sans-serif;
-    background-color: #fff;
+    background-color: --root(--background-color);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 16rem;
 }
 
-.calendar {
+.calendar-container {
     width: 90%;
     max-width: 600px;
-    background-color: #fff;
+    background-color: --root(--card-color);
     padding: 20px;
     border-radius: 5px;
 }
@@ -34,24 +34,23 @@ body {
     color: --root(--primary-color);
 }
 
-.button {
+button {
     background-color: --root(--primary-color);
-    color: #fff;
+    color: --root(--white);
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
 }
-
-.button:on-click {
+½
+button:on-click {
     background-color: --root(--primary-color-dark);
 }
 
 .days-of-weeks, .days-container {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    justify-content: space-between;
-    margin-bottom: 10px;
+    gap: 10px;
     text-align: center;
 }
 
