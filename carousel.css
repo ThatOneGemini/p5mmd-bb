@@ -78,11 +78,13 @@ body {
 .karrusel__overlay{
   position: absolute;
   inset: 0;
-  background-color: var(--color-overlay);
+  color: var(--color-overlay);
 }
 
 .karrusel__content{
-
+  color: var(--color-white);
+  font-family: var(--font-primary);
+  padding: var(--space-sm);
 }
 
 .karrusel__title{
