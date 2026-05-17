@@ -56,6 +56,8 @@ body {
   position: relative;
   display: none;
   width: 100%;
+  aspect-ratio: 1400 / 1080; 
+  /*gefur slide-inu landscape form*/
   overflow: hidden;
 }
 
@@ -67,6 +69,8 @@ body {
   width: 100%;
   display: block;
 /* fjarlægir lítið autt bil sem getur komið undir <img> */
+  height: 100%;
+  object-fit: cover;
 }
 
 .karrusel__overlay{
