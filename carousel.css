@@ -90,10 +90,9 @@ body {
 }
 
 .karrusel__title {
-  font-size: 1.1rem;
-  font-weight: 700;
+  font-size: 2rem;
   line-height: 1.2;
-  margin-bottom: var(--space-xs);
+  margin-bottom: var(--space-sm);
 }
 
 .karrusel__text{
