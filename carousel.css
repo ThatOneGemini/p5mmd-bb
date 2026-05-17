@@ -49,6 +49,7 @@ body {
   width: 100%;
   max-width: 24rem;
   padding-inline: 6rem;
+  background-color: hotpink;
   box-sizing: border-box; 
   /* passar að padding teljist með í heildarbreiddinni, svo carouselinn ýtist ekki út fyrir skjáinn.*/
 }
