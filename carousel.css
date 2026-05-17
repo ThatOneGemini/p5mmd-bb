@@ -55,14 +55,18 @@ body {
   /*Padding block up and down, inline to the sides*/
 }
 
+
+
 .forside-menu__card::after {
-  content: "";
+  content: "›";
   position: absolute;
+/*absolute-on top of, this hase to change if text is longer*/
   top: 0;
   right: 0;
   bottom: 0;
   width: 6rem;
   background-color: var(--color-primary);
+  color: var(--color-white);
 }
 
 .forside-menu__title{
